@@ -1,0 +1,6 @@
+---
+- hosts: demo
+  tasks:
+
+   - name: instaling ftp package
+     action: yum pkg=ftp state=present

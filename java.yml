@@ -1,0 +1,14 @@
+---
+- hosts: localhost , demo
+  become: yes
+  tasks:
+
+  - name: Install Packages
+    yum: name={{ item }} update_cache=yes state=latest
+    with_items:
+      - java
+      - git
+      - maven 
+      
+ 
+      

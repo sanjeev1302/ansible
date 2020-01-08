@@ -1,0 +1,9 @@
+---
+- hosts: demo
+  vars:
+   - pkgname: ftp
+   - name: myne
+  tasks:
+
+   - name: instaling {{pkgname}} package
+     yum: name='{{pkgname}}' state=absent
